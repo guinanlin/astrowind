@@ -26,6 +26,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   site: 'https://f5.erpnext.cc', //site
+  base: '/',
 
   output: 'static',
 
