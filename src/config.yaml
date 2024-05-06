@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: F5
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false

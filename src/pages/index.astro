@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'F5 — 快速构建高度定制B端产品 Frappe + F5',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +25,26 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: '0.1元体验',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: '文档', href: '#features' },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      快速构建 <span class="hidden xl:inline">B端产品</span>
+      <span class="text-accent dark:text-white highlight"> F5</span> + Frappe
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">F5</span> 是以开源Frappe Framework + ERPNext 为底层框架, 并结合独立研发的前端组件构建工具F5,采用模板技术,组件构建技术, </span
       >
       <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      用于满足ERP顾问,独立顾问,传统ERP产品代理商构建自有产品的利器.
     </Fragment>
   </Hero>
 
@@ -58,46 +56,33 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="F5能带给你什么？"
+    subtitle="基于开源Frappe做后台逻辑构建，依托模板技术， 组件技术， Vue3 做低代码构建工具，可以快速随心所欲的构建所思所想！"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Frappe Framework 基座',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          'Frappe 是低代码、开源、Python 和 Javascript Web 框架，是优秀的B端产品利器',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'ERPNext 基座',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'ERPNext 是世界上最好的免费开源ERP，构建于类似Oracle，SAP的设计理念，结合大量的工程实践.',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'F5 组件利器',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'F5 工具是大汤圆技术结合Mybricks技术， 与ERPNext大量的工程定制化能力结合， 创建的组件构建工具 以及组件库 ',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'ERP模板技术',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          '大汤圆技术结合Vben-Admin构建的，行业通用化ERP模板， 更易于您的扩展和想法的实现',
         icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
+      }
     ]}
   />
 
@@ -105,23 +90,22 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    title="F5适合的业务场景"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: '基于模板构建',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'F5提供一个基础的通用ERP产品底座，采用的技术为Vben-Admin 以及 Vue3',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: '设计专业的行业组件',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          '基于F5前端组件设计工具， 设计专业的行业组件，并且能与源码快速融合， 特别适用于需要定制的行业场景.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: '涉及技术栈',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          '后端Python，前端Vue3 + TS 构建',
       },
     ]}
     image={{
@@ -130,8 +114,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">构建细分行业领域的ERP产品</h3>
+      利用模板技术， 组件技术 快速构建自有知识产权的ERP产品
     </Fragment>
 
     <Fragment slot="bg">
@@ -139,106 +123,43 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Steps Widget ****************** -->
+   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="使用F5的具体步骤："
     items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+ {
+        title: '步骤 1: <span class="font-medium">从Git读取到ERP Web模板</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "我们提供 Web 模板仓库，您可以从该仓库下载或更新您自己的仓库。模板仓库包含各种预构建的页面和组件，可用于快速构建您的 ERP 产品界面。",
+          icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: '步骤 2: <span class="font-medium">安装ERPNextCN应用</em>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "ERPNextCN 是针对中国市场定制的 ERPNext 版本，包含本地化功能和支持。您需要按照提供的安装指南安装 ERPNextCN 应用。",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: '步骤 3: <span class="font-medium">在前端代码配置连接的后端服务</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          '在前端代码中，您需要配置连接到后端 ERPNextCN 应用的地址和凭证。这可以让您的前端代码与后端数据和功能进行交互。',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: '步骤 4: <span class="font-medium">运行您的ERP产品</span>',
+        description:
+          '完成以上步骤后，您就可以启动您的 ERP 产品了。您可以访问您的产品 URL 地址并在浏览器中查看.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: '步骤 5: <span class="font-medium">基于F5快速构建您的ERP产品</span>',
+        description:
+          'F5 提供丰富的组件和模板，可用于快速构建各种 ERP 产品功能。您可以拖拽组件、配置属性并连接数据，轻松创建所需的功能页面。F5 还支持二次开发，您可以根据自己的需求扩展和定制产品功能。',
+        icon: 'tabler:paint',
+      },
+      {
+        title: '立即开始使用 F5，构建您的专属 ERP 产品！',
         icon: 'tabler:check',
       },
     ]}
@@ -251,9 +172,8 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
+    title="常用的组件"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
     items={[
       {
         title: 'Headers',
@@ -285,7 +205,7 @@ const metadata = {
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
+        title: '价格',
         description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
         icon: 'flat-color-icons:currency-exchange',
       },
@@ -311,16 +231,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
 
   <!-- FAQs Widget ******************* -->
 
@@ -374,26 +284,4 @@ const metadata = {
     ]}
   />
 
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
 </Layout>
