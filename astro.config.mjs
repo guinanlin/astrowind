@@ -25,7 +25,7 @@ const whenExternalScripts = (items = []) =>
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: 'https://fis5.pages.github.io',
+  site: 'https://fis5.pages.github.io', //site
 
   output: 'static',
 
