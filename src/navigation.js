@@ -4,7 +4,7 @@ export const headerData = {
   links: [
     {
       text: '产品',
-      href: getPermalink('/'),
+      href: getPermalink('/index'),
     },
     // {
     //   text: '产品功能',
