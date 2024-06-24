@@ -1,0 +1,31 @@
+name: 部署DTY站点dty
+
+on:
+  push:
+    branches:
+      - www.datangyuan.cn  # 这里假设你的主分支是 main，可以根据实际情况修改
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build project
+        run: npm run build
+      
+      - name: Deploy to www.datangyuan.cn-pages branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -b www.datangyuan.cn-pages
+          git rm -rf .
+          cp -r dist/. .
+          git add .
+          git commit -m "Deployed latest changes"
+          git push --force origin www.datangyuan.cn-pages
