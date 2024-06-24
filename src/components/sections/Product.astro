@@ -36,15 +36,15 @@ const cards = [
     link: "https://google.com",
   },
   {
-    index: 1,
+    index: 4,
     titleTop: "SmartView",
-    titleBottom: "函数取数，经营分析， 指标分析",
+    titleBottom: "函数取数，经营分析，指标分析",
     img: c6,
     alt: "SEO",
     link: "https://google.com",
   },
   {
-    index: 2,
+    index: 5,
     titleTop: "仓储WMS",
     titleBottom: "实用的仓储管家",
     img: c5,
@@ -52,7 +52,7 @@ const cards = [
     link: "https://google.com",
   },
   {
-    index: 3,
+    index: 6,
     titleTop: "运输TMS",
     titleBottom: "三方物流的业财一体操作系统",
     img: c4,
@@ -61,14 +61,13 @@ const cards = [
   },
 ];
 
-const description =
-  "作为ERP咨询服务商， 我们提供咨询和落地的整体的端到端的产品";
+const description = "作为ERP咨询服务商，我们提供咨询和落地的整体的端到端的产品";
 ---
 
-<Section>
+<Section class="py-0">
   <div class="mt-[140px] mb-5" id="product">
     <SectionTitle sectionTitle="产品" description={description} />
-    <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
       {
         cards.map((card) => (
           <ServiceCard
@@ -84,3 +83,15 @@ const description =
     </div>
   </div>
 </Section>
+
+
+<style>
+    section {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    #product {
+        margin-top: 20px; /* 可以尝试设置为 0 或较小的值 */
+    }
+</style>
