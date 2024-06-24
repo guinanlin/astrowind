@@ -3,23 +3,24 @@ import { Image } from "astro:assets";
 
 const navLinks = [
   {
-    name: "About us",
-    href: "#about",
+    name: "产品",
+    href: "#product",
   },
   {
-    name: "Services",
+    name: "服务",
     href: "#services",
   },
   {
-    name: "Use cases",
+    name: "案例",
     href: "#cases",
   },
   {
-    name: "Testimonials",
-    href: "#testimonials",
+    name: "文档",
+    href: "https://docs.datangyuan.cn",
+    external: true,
   },
   {
-    name: "Contact",
+    name: "联络我们",
     href: "#contact",
   },
 ];
@@ -55,9 +56,21 @@ import brand from "../../assets/brand.svg";
           navLinks.map((link) => {
             return (
               <li class="mx-4 p-4 xl:mx-0 px-0">
-                <a id={link.name} href={link.href} class="block">
-                  {link.name}
-                </a>
+                {link.external ? (
+                  <a
+                    id={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="block"
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <a id={link.name} href={link.href} class="block">
+                    {link.name}
+                  </a>
+                )}
               </li>
             );
           })
@@ -66,7 +79,7 @@ import brand from "../../assets/brand.svg";
 
       <!-- Login -->
       <div class="flex xl:flex-row xl:items-center px-4 xl:gap-4 flex-col">
-        <button class="btn-secondary">Request a quote</button>
+        <button class="btn-secondary">登录</button>
       </div>
     </div>
 

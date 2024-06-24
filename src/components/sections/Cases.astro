@@ -7,20 +7,20 @@ const cards = [
   {
     index: 0,
     title:
-      "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
-    link: "https://google.com",
+      "上海高科技企业企服灯塔，通过整体的ERP方案，并且定制研发适合于企业的高新企业申请AI应用， 提升企业的整体的作业效率。",
+    link: "#",
   },
   {
     index: 1,
     title:
-      "For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.",
-    link: "https://google.com",
+      "杭州晓峰财税咨询公司， 通过定制ERP方案， 在企业的财税领域， 实现完整的端到端的咨询+服务的特色服务业务",
+    link: "#",
   },
   {
     index: 1,
     title:
-      "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.",
-    link: "https://google.com",
+      "澳大利亚熊倪维尔公司， 通过对化工领域市场的细分定制， 在细分领域的应用， 结合汤圆ERP实现行业的特色增值服务",
+    link: "#",
   },
 ];
 
@@ -30,8 +30,8 @@ import SectionTitle from "../ui/SectionTitle.astro";
 
 <Section id="cases">
   <SectionTitle
-    sectionTitle="Case Studies"
-    description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+    sectionTitle="案例"
+    description="通过我们的过往案例， 来洞察和探索这个世界"
   />
   <div class="flex flex-col lg:flex-row justify-between rounded-[45px] p-1">
     {
@@ -41,7 +41,7 @@ import SectionTitle from "../ui/SectionTitle.astro";
             <div class="flex flex-col gap-5">
               <p>{card.title}</p>
               <a href={card.link} class="flex items-center gap-[15px]">
-                <span class="text-green">Case Info</span>
+                <span class="text-green">案例详情</span>
                 <picture>
                   <Image src={larrow} alt="Arrow pointing up right" />
                 </picture>

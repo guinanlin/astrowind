@@ -1,0 +1,86 @@
+---
+import SectionTitle from "../ui/SectionTitle.astro";
+import ServiceCard from "../ui/ServiceCard.astro";
+import Section from "./Section.astro";
+
+import c1 from "../../assets/pics/card-pic1.png";
+import c2 from "../../assets/pics/card-pic2.png";
+import c3 from "../../assets/pics/card-pic3.png";
+import c4 from "../../assets/pics/card-pic4.png";
+import c5 from "../../assets/pics/card-pic5.png";
+import c6 from "../../assets/pics/card-pic6.png";
+
+const cards = [
+  {
+    index: 1,
+    titleTop: "进销存",
+    titleBottom: "高度定制的进销存管家",
+    img: c1,
+    alt: "SEO",
+    link: "https://google.com",
+  },
+  {
+    index: 2,
+    titleTop: "云业财",
+    titleBottom: "业财一体的企业ERP",
+    img: c2,
+    alt: "SEO",
+    link: "https://google.com",
+  },
+  {
+    index: 3,
+    titleTop: "合并报表",
+    titleBottom: "三大财报，财务合并报表",
+    img: c3,
+    alt: "SEO",
+    link: "https://google.com",
+  },
+  {
+    index: 1,
+    titleTop: "SmartView",
+    titleBottom: "函数取数，经营分析， 指标分析",
+    img: c6,
+    alt: "SEO",
+    link: "https://google.com",
+  },
+  {
+    index: 2,
+    titleTop: "仓储WMS",
+    titleBottom: "实用的仓储管家",
+    img: c5,
+    alt: "SEO",
+    link: "https://google.com",
+  },
+  {
+    index: 3,
+    titleTop: "运输TMS",
+    titleBottom: "三方物流的业财一体操作系统",
+    img: c4,
+    alt: "SEO",
+    link: "https://google.com",
+  },
+];
+
+const description =
+  "作为ERP咨询服务商， 我们提供咨询和落地的整体的端到端的产品";
+---
+
+<Section>
+  <div class="mt-[140px] mb-5" id="product">
+    <SectionTitle sectionTitle="产品" description={description} />
+    <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
+      {
+        cards.map((card) => (
+          <ServiceCard
+            index={card.index}
+            titleTop={card.titleTop}
+            titleBottom={card.titleBottom}
+            img={card.img}
+            alt={card.alt}
+            link={card.link}
+          />
+        ))
+      }
+    </div>
+  </div>
+</Section>

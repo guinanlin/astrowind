@@ -20,10 +20,10 @@
   }
 
   :root {
-    --green: #b9ff66;
+    --green: #c3d6f3;
     --black: rgb(0, 0, 0);
     --dark: #191a23;
-    --white: #f3f3f3;
+    --white: #ffffff;
   }
 
   @layer base {
