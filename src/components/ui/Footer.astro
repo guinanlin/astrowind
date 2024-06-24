@@ -24,48 +24,11 @@ const links = [
 <section class="sm:px-5">
   <div class="w-full max-w-[1240px] mx-auto">
     <div
-      class="px-[15px] bg-dark text-white py-[55px] lg:px-[60px] sm:rounded-t-[45px]"
+      class="px-[15px] bg-[#696969] text-white py-[5px] lg:px-[60px] sm:rounded-t-[45px]"
     >
       <div>
-        <div
-          class="flex flex-col lg:flex-row gap-7 items-center justify-between"
-        >
-          <picture>
-            <a href="#home">
-              <Image src={Logo} alt="Logo for DTY" />
-            </a>
-          </picture>
-          <ul class="flex flex-col sm:flex-row gap-5">
-            {
-              links.map((link) => {
-                return (
-                  <li class="text-center">
-                    <a class="underline" href={link.href}>
-                      {link.name}
-                    </a>
-                  </li>
-                );
-              })
-            }
-          </ul>
-          <ul class="flex gap-5">
-            {
-              logos.map((logo) => {
-                return (
-                  <li>
-                    <a href={logo.link} target="_blank">
-                      <picture>
-                        <Image src={logo.src} alt={logo.name} />
-                      </picture>
-                    </a>
-                  </li>
-                );
-              })
-            }
-          </ul>
-        </div>
 
-<div class="flex flex-col lg:flex-row mt-[66px] mb-[51px]">
+<div class="flex flex-col lg:flex-row mt-[15px] mb-[15px]">
   <div class="flex text-center lg:text-start flex-col w-full lg:w-[70%]">
     <h3 class="mb-5">联系我们：</h3>
     <div class="flex flex-col justify-between gap-4">
@@ -83,16 +46,14 @@ const links = [
 
       </div>
 
-      <div class="h-[1px] bg-white mb-5"></div>
+      <div class="h-[1px] bg-white mb-5">
+      
+      </div>
       <div
-        class="flex flex-col lg:flex-row h-20 justify-center mt-4 text-center md:justify-between md:mt-0"
+        class="flex flex-col lg:flex-row h-10 justify-center mt-4 text-center md:justify-between md:mt-0"
       >
         <span
-          >2024 大汤圆技术 - 制作 <a
-            class="underline"
-            target="_blank"
-            href="https://astro.build/">Astro</a
-          ></span
+          >2024 大汤圆技术 </span
         >&nbsp
 
       </div>
